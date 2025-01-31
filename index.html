@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stuckguessr</title>
+        <link rel="stylesheet" href="assets/stuckguessr.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="page">
+                <p id="title">STUCKGUESSR</p>
+                <div id="home-page">
+                    <img src="assets/home.png" alt="Stuckguessr">
+                    <p class="text">
+                        STUCKGUESSR is a GeoGuessr-like game where you are given a random
+                        panel from Homestuck and must guess which act of Homestuck it comes from.
+                    </p>
+                    <div class="command-link">
+                        &gt; <a href="javascript:void(0)" id="play-link">Play.</a>
+                    </div>
+                </div>
+                <div id="play-page" class="hid">
+                    <img id="play-image" class="hid">
+                    <p id="win-text" class="text hid">
+                        <img src="assets/youwin.gif" alt="YOU WIN!">
+                        <br><br>
+                        You got the correct answer in <span id="guess-count"></span>.
+                        <br><br>
+                        TOTAL WINS: <span id="total-wins">333</span>
+                    </p>
+                    <p id="lose-text" class="text hid">
+                        <img src="assets/youlose.gif" alt="YOU LOSE!">
+                        <br><br>
+                        The correct answer was:
+                        <br><br>
+                        <span id="correct-answer">test</span>
+                    </p>
+                    <p id="game-text" class="text">
+                        Try to guess which act this panel is from!
+                        <br>
+                        <br>
+                        <select id="act-picker">
+                            <option value="">Select</option>
+                        </select>
+                    </p>
+                    <div id="guesses">
+                        <div id="guess-1"></div>
+                        <div id="guess-2"></div>
+                        <div id="guess-3"></div>
+                        <div id="guess-4"></div>
+                        <div id="guess-5"></div>
+                        <div id="guess-6"></div>
+                    </div>
+                    <div class="command-link" id="submit">
+                        &gt; <a href="javascript:void(0)" id="submit-link">Submit.</a>
+                    </div>
+                    <div class="command-link hid" id="play-again">
+                        &gt; <a href="javascript:void(0)" id="play-again-link">Play again.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bannerframe"></div>
+        <script src="assets/stuckguessr.js"></script>
+    </body>
+</html>

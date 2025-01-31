@@ -1,0 +1,99 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #535353;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#page-container {
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #c6c6c6;
+    padding-top: 7px;
+    padding-bottom: 23px;
+}
+
+#bannerframe {
+    width: 950px;
+    height: 110px;
+    background: no-repeat url("bannerframe.png");
+    margin: 0 auto;
+}
+
+#page {
+    width: 650px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    box-sizing: border-box;
+}
+
+#page img {
+    image-rendering: crisp-edges;
+}
+
+#title {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.text {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+    padding-top: calc(20px + 1em);
+    padding-bottom: calc(17px + 1em);
+}
+
+.hid {
+    display: none !important;
+}
+
+.command-link {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 24px;
+    padding-bottom: 34px;
+}
+
+#guesses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#guesses div {
+    width: 24px;
+    height: 24px;
+    image-rendering: crisp-edges;
+}
+
+#guesses div:not(:last-child) {
+    margin-right: 2px;
+}
+
+#guesses div.correct {
+    background-image: url("guesscorrect.png");
+}
+
+#guesses div.incorrect {
+    background-image: url("guessincorrect.png");
+}
+
+#correct-answer {
+    font-size: 24px;
+}
