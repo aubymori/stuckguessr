@@ -1,11 +1,22 @@
+@font-face {
+    font-family: "Courier New";
+    font-weight: 700;
+    src: local("Courier New Bold"), url("courbd.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Verdana";
+    font-weight: 400;
+    src: local("Verdana"), url("verdana.ttf") format("truetype");
+}
+
 html {
     overflow-y: scroll;
 }
 
 body {
     background-color: #535353;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
@@ -96,4 +107,24 @@ body {
 
 #correct-answer {
     font-size: 24px;
+}
+
+/* Mobile */
+@media screen and (max-width: 950px) {
+    #page-container, #page, #bannerframe {
+        width: 100%;
+    }
+
+    #page-container {
+        margin-top: 0 !important;
+        padding: 0;
+    }
+
+    #page img {
+        max-width: 100%;
+    }
+
+    .text, .command-link {
+        max-width: 90%;
+    }
 }
