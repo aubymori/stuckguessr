@@ -195,12 +195,11 @@ function setCookie(name, value)
 
 function submitGuess()
 {
-    guesses++;
-
     let guess = document.getElementById("act-picker").value;
     // Skip if none selected
     if (guess == "")
         return;
+    guesses++
     let correctAnswer = getActForPage(page);
     // Win
     if (guess == correctAnswer)
