@@ -211,7 +211,7 @@ function submitGuess()
             wins = 0;
         wins++;
 
-        document.getElementById("guess-" + guesses).classList.add("correct");
+        document.getElementById("guess-" + Math.min(guesses, 6)).classList.add("correct");
         document.getElementById("guess-count").textContent = guesses + (guesses == 1 ? " guess" : " guesses");
         document.getElementById("total-wins").textContent = wins;
         document.getElementById("win-text").classList.remove("hid");
@@ -223,7 +223,7 @@ function submitGuess()
     }
     else
     {
-        document.getElementById("guess-" + guesses).classList.add("incorrect");
+        document.getElementById("guess-" + Math.min(guesses, 6)).classList.add("incorrect");
         // Lose
         if (guesses == 6)
         {
