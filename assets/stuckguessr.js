@@ -175,7 +175,7 @@ function startRound()
     let image = data[page][Math.floor(Math.random() * data[page].length)];
     
     let imageEl = document.getElementById("play-image");
-    imageEl.src = "https://www.homestuck.com/images/storyfiles/hs2/" + image;
+    imageEl.src = "http://cdn.mspaintadventures.com/storyfiles/hs2/" + image;
     imageEl.classList.remove("hid");
 }
 
